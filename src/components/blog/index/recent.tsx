@@ -1,3 +1,4 @@
+import Button from "@/components/button/Button";
 import Section from "@/components/ui/Section";
 import { Blog } from "@/types/types";
 import Link from "next/link";
@@ -57,7 +58,6 @@ export default function RecentPosts({ posts }: { posts: Blog[] }) {
 					<h1 className="text-2xl font-semibold capitalize lg:text-3xl text-white">
 						recent posts{" "}
 					</h1>
-
 					{/* <button className="focus:outline-none">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -74,6 +74,7 @@ export default function RecentPosts({ posts }: { posts: Blog[] }) {
 							/>
 						</svg>
 					</button> */}
+					<Button children={<p>Publish</p>} type={"gradient"} />
 				</div>
 
 				<hr className="my-8 border-gray-700" />
