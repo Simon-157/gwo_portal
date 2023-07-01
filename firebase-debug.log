@@ -1,0 +1,36 @@
+[debug] [2023-07-01T10:40:23.216Z] ----------------------------------------------------------------------
+[debug] [2023-07-01T10:40:23.218Z] Command:       /usr/local/bin/firebase /home/simon/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-07-01T10:40:23.218Z] CLI Version:   11.25.3
+[debug] [2023-07-01T10:40:23.218Z] Platform:      linux
+[debug] [2023-07-01T10:40:23.218Z] Node Version:  v16.16.0
+[debug] [2023-07-01T10:40:23.219Z] Time:          Sat Jul 01 2023 10:40:23 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-07-01T10:40:23.219Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-01T10:40:23.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-01T10:40:23.279Z] > authorizing via signed-in user (junioratta2929@gmail.com)
+[debug] [2023-07-01T10:40:23.279Z] [iam] checking project gwo-org for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-01T10:40:23.281Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gwo-org:testIamPermissions [none]
+[debug] [2023-07-01T10:40:23.281Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gwo-org:testIamPermissions x-goog-quota-user=projects/gwo-org
+[debug] [2023-07-01T10:40:23.281Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gwo-org:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-01T10:40:24.548Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gwo-org:testIamPermissions 200
+[debug] [2023-07-01T10:40:24.549Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gwo-org:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-01T10:40:24.553Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org [none]
+[debug] [2023-07-01T10:40:25.644Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org 200
+[debug] [2023-07-01T10:40:25.645Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org {"projectId":"gwo-org","projectNumber":"956235142581","displayName":"gwo-org","name":"projects/gwo-org","resources":{"hostingSite":"gwo-org"},"state":"ACTIVE","etag":"1_fb0182c4-d1d2-4867-9ae7-76e8e003052c"}
+[debug] [2023-07-01T10:40:27.498Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites pageToken=&pageSize=10
+[debug] [2023-07-01T10:40:28.849Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites 200
+[debug] [2023-07-01T10:40:28.850Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites {"sites":[{"name":"projects/gwo-org/sites/gwo-org","defaultUrl":"https://gwo-org.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-01T10:40:28.851Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites 
+[debug] [2023-07-01T10:40:30.081Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites 200
+[debug] [2023-07-01T10:40:30.081Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites {"sites":[{"name":"projects/gwo-org/sites/gwo-org","defaultUrl":"https://gwo-org.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-01T10:40:30.081Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org/webApps/-/config [none]
+[debug] [2023-07-01T10:40:31.317Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org/webApps/-/config 200
+[debug] [2023-07-01T10:40:31.317Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org/webApps/-/config {"projectId":"gwo-org","appId":"1:956235142581:web:f6a40b9a1c46ae6a1b75fc","storageBucket":"gwo-org.appspot.com","apiKey":"AIzaSyC-evrC9WOLNcSSYFRWRNDWpTJGpnCV3Eg","authDomain":"gwo-org.firebaseapp.com","messagingSenderId":"956235142581"}
+[debug] [2023-07-01T10:43:38.179Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at Object.execSync (node:child_process:899:15)
+    at execSync (pkg/prelude/bootstrap.js:2111:30)
+    at prepareFrameworks (/home/simon/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:374:42)
+    at async deploy (/home/simon/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.

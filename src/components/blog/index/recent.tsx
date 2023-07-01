@@ -2,6 +2,7 @@ import Button from "@/components/button/Button";
 import Section from "@/components/ui/Section";
 import { Blog } from "@/types/types";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 function Post({
 	type,
@@ -12,6 +13,7 @@ function Post({
 	slug,
 	link,
 }: Blog) {
+
 	return (
 		<div>
 			<Link href={`/blog/${slug}`}>
@@ -51,6 +53,8 @@ function Post({
 }
 
 export default function RecentPosts({ posts }: { posts: Blog[] }) {
+	const router = useRouter()
+
 	return (
 		<Section className="!pb-0">
 			<div className="container px-6 mx-auto">
@@ -74,7 +78,7 @@ export default function RecentPosts({ posts }: { posts: Blog[] }) {
 							/>
 						</svg>
 					</button> */}
-					<Button children={<p>Publish</p>} type={"gradient"} />
+					<Button children={<p>Publish</p>} type={"gradient"} onClick={() =>{router.push('/blog/admin')}}/>
 				</div>
 
 				<hr className="my-8 border-gray-700" />

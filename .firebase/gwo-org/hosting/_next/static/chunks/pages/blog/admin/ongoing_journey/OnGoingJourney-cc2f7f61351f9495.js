@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[767],{9183:function(n,_,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/admin/ongoing_journey/OnGoingJourney",function(){return o(3011)}])}},function(n){n.O(0,[675,11,774,888,179],function(){return n(n.s=9183)}),_N_E=n.O()}]);

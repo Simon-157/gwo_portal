@@ -1,4 +1,5 @@
 import { initializeApp } from 'firebase/app';
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -14,3 +15,10 @@ const app = initializeApp(firebaseConfig);
 
 export const firebaseApp = app;
 export const db = getFirestore(app);
+export const auth = getAuth(app);
+
+
+
+
+
+// Create an instance of the Firebase authentication module
