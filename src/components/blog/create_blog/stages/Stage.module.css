@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+
+.textColumn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 42px;
+  padding-top: 1.5rem;
+  color: var(--app-yellow);
+}
+
+.imageColumn {
+  opacity: 0.5;
+}
+
+.img{
+  max-width: 100%;
+  transform: scale(2);
+  position: relative;
+  left: 4rem;
+  top: 7rem;
+}
+
+.text__row {
+  color: var(--app-yellow);
+  padding: 0 !important;
+  line-height: 4.5;
+}
+
+
+.arrow{
+  color: var(--app-green);
+  cursor: pointer;
+}
+
+
+.stageCircleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stageCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #1e1e1e;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.activeStageCircle {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  background: var(--app-yellow);
+}
+
+
+@media (min-width: 768px) {
+  .img {
+    transform: scale(1);
+    top: 0;
+    left: 0;
+  }
+}
+

@@ -8,5 +8,5 @@ export type Blog = {
 	link: string;
 	date: number; // unix
 	slug?: string;
-    content?:Text
+    content?:string
 };

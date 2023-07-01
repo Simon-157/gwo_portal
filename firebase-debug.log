@@ -1,0 +1,36 @@
+[debug] [2023-07-01T15:58:03.978Z] ----------------------------------------------------------------------
+[debug] [2023-07-01T15:58:03.980Z] Command:       /usr/local/bin/firebase /home/simon/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy --only hosting
+[debug] [2023-07-01T15:58:03.980Z] CLI Version:   11.25.3
+[debug] [2023-07-01T15:58:03.980Z] Platform:      linux
+[debug] [2023-07-01T15:58:03.980Z] Node Version:  v16.16.0
+[debug] [2023-07-01T15:58:03.981Z] Time:          Sat Jul 01 2023 15:58:03 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-07-01T15:58:03.981Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-01T15:58:04.232Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-01T15:58:04.233Z] > authorizing via signed-in user (richardgbamara703@gmail.com)
+[debug] [2023-07-01T15:58:04.233Z] [iam] checking project simon-election for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-01T15:58:04.235Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/simon-election:testIamPermissions [none]
+[debug] [2023-07-01T15:58:04.235Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/simon-election:testIamPermissions x-goog-quota-user=projects/simon-election
+[debug] [2023-07-01T15:58:04.235Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/simon-election:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-01T15:58:05.361Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/simon-election:testIamPermissions 200
+[debug] [2023-07-01T15:58:05.361Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/simon-election:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-01T15:58:05.363Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/simon-election [none]
+[debug] [2023-07-01T15:58:06.031Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/simon-election 200
+[debug] [2023-07-01T15:58:06.031Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/simon-election {"projectId":"simon-election","projectNumber":"982573082905","displayName":"simon-election","name":"projects/simon-election","resources":{"hostingSite":"simon-election","storageBucket":"simon-election.appspot.com","locationId":"us-west2"},"state":"ACTIVE","etag":"1_a4d0b7dd-32b6-41ad-a3d8-889f7070b093"}
+[debug] [2023-07-01T15:58:08.309Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites pageToken=&pageSize=10
+[debug] [2023-07-01T15:58:10.054Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites 200
+[debug] [2023-07-01T15:58:10.055Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites {"sites":[{"name":"projects/simon-election/sites/gwo-org1","defaultUrl":"https://gwo-org1.web.app","type":"USER_SITE"},{"name":"projects/simon-election/sites/simon-election","defaultUrl":"https://simon-election.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-01T15:58:10.058Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites 
+[debug] [2023-07-01T15:58:11.330Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites 200
+[debug] [2023-07-01T15:58:11.331Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites {"sites":[{"name":"projects/simon-election/sites/gwo-org1","defaultUrl":"https://gwo-org1.web.app","type":"USER_SITE"},{"name":"projects/simon-election/sites/simon-election","defaultUrl":"https://simon-election.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-01T15:58:11.331Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/simon-election/webApps/-/config [none]
+[debug] [2023-07-01T15:58:12.300Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/simon-election/webApps/-/config 200
+[debug] [2023-07-01T15:58:12.301Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/simon-election/webApps/-/config {"projectId":"simon-election","storageBucket":"simon-election.appspot.com","locationId":"us-west2","apiKey":"AIzaSyAxcXYC0IyTBZ19NgPnHvAFeHHyw5R_mNM","authDomain":"simon-election.firebaseapp.com","messagingSenderId":"982573082905"}
+[debug] [2023-07-01T15:59:17.026Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at Object.execSync (node:child_process:899:15)
+    at execSync (pkg/prelude/bootstrap.js:2111:30)
+    at prepareFrameworks (/home/simon/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:374:42)
+    at async deploy (/home/simon/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
