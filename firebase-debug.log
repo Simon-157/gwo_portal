@@ -1,32 +1,32 @@
-[debug] [2023-07-01T10:40:23.216Z] ----------------------------------------------------------------------
-[debug] [2023-07-01T10:40:23.218Z] Command:       /usr/local/bin/firebase /home/simon/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
-[debug] [2023-07-01T10:40:23.218Z] CLI Version:   11.25.3
-[debug] [2023-07-01T10:40:23.218Z] Platform:      linux
-[debug] [2023-07-01T10:40:23.218Z] Node Version:  v16.16.0
-[debug] [2023-07-01T10:40:23.219Z] Time:          Sat Jul 01 2023 10:40:23 GMT+0000 (Greenwich Mean Time)
-[debug] [2023-07-01T10:40:23.219Z] ----------------------------------------------------------------------
+[debug] [2023-07-01T15:58:03.978Z] ----------------------------------------------------------------------
+[debug] [2023-07-01T15:58:03.980Z] Command:       /usr/local/bin/firebase /home/simon/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy --only hosting
+[debug] [2023-07-01T15:58:03.980Z] CLI Version:   11.25.3
+[debug] [2023-07-01T15:58:03.980Z] Platform:      linux
+[debug] [2023-07-01T15:58:03.980Z] Node Version:  v16.16.0
+[debug] [2023-07-01T15:58:03.981Z] Time:          Sat Jul 01 2023 15:58:03 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-07-01T15:58:03.981Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-07-01T10:40:23.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-07-01T10:40:23.279Z] > authorizing via signed-in user (junioratta2929@gmail.com)
-[debug] [2023-07-01T10:40:23.279Z] [iam] checking project gwo-org for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2023-07-01T10:40:23.281Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gwo-org:testIamPermissions [none]
-[debug] [2023-07-01T10:40:23.281Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gwo-org:testIamPermissions x-goog-quota-user=projects/gwo-org
-[debug] [2023-07-01T10:40:23.281Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gwo-org:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2023-07-01T10:40:24.548Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gwo-org:testIamPermissions 200
-[debug] [2023-07-01T10:40:24.549Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gwo-org:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2023-07-01T10:40:24.553Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org [none]
-[debug] [2023-07-01T10:40:25.644Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org 200
-[debug] [2023-07-01T10:40:25.645Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org {"projectId":"gwo-org","projectNumber":"956235142581","displayName":"gwo-org","name":"projects/gwo-org","resources":{"hostingSite":"gwo-org"},"state":"ACTIVE","etag":"1_fb0182c4-d1d2-4867-9ae7-76e8e003052c"}
-[debug] [2023-07-01T10:40:27.498Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites pageToken=&pageSize=10
-[debug] [2023-07-01T10:40:28.849Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites 200
-[debug] [2023-07-01T10:40:28.850Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites {"sites":[{"name":"projects/gwo-org/sites/gwo-org","defaultUrl":"https://gwo-org.web.app","type":"DEFAULT_SITE"}]}
-[debug] [2023-07-01T10:40:28.851Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites 
-[debug] [2023-07-01T10:40:30.081Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites 200
-[debug] [2023-07-01T10:40:30.081Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/gwo-org/sites {"sites":[{"name":"projects/gwo-org/sites/gwo-org","defaultUrl":"https://gwo-org.web.app","type":"DEFAULT_SITE"}]}
-[debug] [2023-07-01T10:40:30.081Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org/webApps/-/config [none]
-[debug] [2023-07-01T10:40:31.317Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org/webApps/-/config 200
-[debug] [2023-07-01T10:40:31.317Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gwo-org/webApps/-/config {"projectId":"gwo-org","appId":"1:956235142581:web:f6a40b9a1c46ae6a1b75fc","storageBucket":"gwo-org.appspot.com","apiKey":"AIzaSyC-evrC9WOLNcSSYFRWRNDWpTJGpnCV3Eg","authDomain":"gwo-org.firebaseapp.com","messagingSenderId":"956235142581"}
-[debug] [2023-07-01T10:43:38.179Z] Error: Command failed: npm i --omit dev --no-audit
+[debug] [2023-07-01T15:58:04.232Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-01T15:58:04.233Z] > authorizing via signed-in user (richardgbamara703@gmail.com)
+[debug] [2023-07-01T15:58:04.233Z] [iam] checking project simon-election for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-01T15:58:04.235Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/simon-election:testIamPermissions [none]
+[debug] [2023-07-01T15:58:04.235Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/simon-election:testIamPermissions x-goog-quota-user=projects/simon-election
+[debug] [2023-07-01T15:58:04.235Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/simon-election:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-01T15:58:05.361Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/simon-election:testIamPermissions 200
+[debug] [2023-07-01T15:58:05.361Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/simon-election:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-01T15:58:05.363Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/simon-election [none]
+[debug] [2023-07-01T15:58:06.031Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/simon-election 200
+[debug] [2023-07-01T15:58:06.031Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/simon-election {"projectId":"simon-election","projectNumber":"982573082905","displayName":"simon-election","name":"projects/simon-election","resources":{"hostingSite":"simon-election","storageBucket":"simon-election.appspot.com","locationId":"us-west2"},"state":"ACTIVE","etag":"1_a4d0b7dd-32b6-41ad-a3d8-889f7070b093"}
+[debug] [2023-07-01T15:58:08.309Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites pageToken=&pageSize=10
+[debug] [2023-07-01T15:58:10.054Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites 200
+[debug] [2023-07-01T15:58:10.055Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites {"sites":[{"name":"projects/simon-election/sites/gwo-org1","defaultUrl":"https://gwo-org1.web.app","type":"USER_SITE"},{"name":"projects/simon-election/sites/simon-election","defaultUrl":"https://simon-election.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-01T15:58:10.058Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites 
+[debug] [2023-07-01T15:58:11.330Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites 200
+[debug] [2023-07-01T15:58:11.331Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/simon-election/sites {"sites":[{"name":"projects/simon-election/sites/gwo-org1","defaultUrl":"https://gwo-org1.web.app","type":"USER_SITE"},{"name":"projects/simon-election/sites/simon-election","defaultUrl":"https://simon-election.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-01T15:58:11.331Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/simon-election/webApps/-/config [none]
+[debug] [2023-07-01T15:58:12.300Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/simon-election/webApps/-/config 200
+[debug] [2023-07-01T15:58:12.301Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/simon-election/webApps/-/config {"projectId":"simon-election","storageBucket":"simon-election.appspot.com","locationId":"us-west2","apiKey":"AIzaSyAxcXYC0IyTBZ19NgPnHvAFeHHyw5R_mNM","authDomain":"simon-election.firebaseapp.com","messagingSenderId":"982573082905"}
+[debug] [2023-07-01T15:59:17.026Z] Error: Command failed: npm i --omit dev --no-audit
     at checkExecSyncError (node:child_process:828:11)
     at Object.execSync (node:child_process:899:15)
     at execSync (pkg/prelude/bootstrap.js:2111:30)
