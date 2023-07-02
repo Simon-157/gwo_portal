@@ -6,6 +6,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 //components
 import Section from "@/components/ui/Section";
+import Button from "@/components/button/Button";
 
 
 export default function Community() {
@@ -76,12 +77,16 @@ export default function Community() {
 							placeholder="Your message"
 							onChange={(e) => setMessage(e.target.value)}
 						/>
-						<Link
+						<Button children={<Link
 							href="/discord"
 							className="btn btn-primary btn-wide"
 						>
 							Send
-						</Link>
+						</Link>} type={""} />
+
+
+
+
 						{/* TODO: Lets get visual effects / blinking effect */}
 					</div>
 				</div>

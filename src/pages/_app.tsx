@@ -28,9 +28,9 @@ export default function MyApp({
     return (
         <>
             <DefaultSeo
-                title="GWO| Where writers are seeded"
+                title="GWO"
                 description="GWO is a 501(c)(3) non-profit organization that provides coding education and mentorship to underprivileged students, empowering them with technical skills for the future."
-                titleTemplate="%s |  Generational Writers Organization"
+                titleTemplate="%s |  Where writers are seeded"
                 openGraph={{
                     type: "website",
                     locale: "en",

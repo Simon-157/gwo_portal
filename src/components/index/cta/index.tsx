@@ -3,6 +3,7 @@ import Link from "next/link";
 
 //components
 import Section from "@/components/ui/Section";
+import Button from "@/components/button/Button";
 
 
 export default function CallToAction() {
@@ -25,9 +26,11 @@ export default function CallToAction() {
 				<p className="z-10 sm:text-sm md:text-md lg:text-lg xl:text-2xl w-full max-w-6xl text-center bg-white/60 bg-clip-text text-transparent">
 					Begin the next step in your writing adventure!
 				</p>
-				<Link href="/" className="btn btn-wide btn-primary">
+
+				<Button children={<Link href="/" className="btn btn-wide btn-primary">
 					Get Started
-				</Link>
+				</Link>} type={""} />
+
 			</div>
 		</Section>
 	);
