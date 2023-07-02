@@ -1,8 +1,8 @@
 const cardData = [
 	{
-		title: "LEARN TO CODE !FOR FREE",
+		title: "LEARN TO WRITE !FOR FREE",
 		description:
-			"Join our friendly community committed to providing coding education and mentorship to underprivileged students. Learn valuable technical skills, expand your network, and make new friends.",
+			"Join our friendly community committed to providing writing education and mentorship to underprivileged students. Learn valuable technical skills, expand your network, and make new friends.",
 		button: "",
 		image: (
 			<svg
@@ -27,7 +27,7 @@ const cardData = [
 						width="158.654"
 						height="125"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
 						<feFlood
 							floodOpacity="0"
@@ -76,7 +76,7 @@ const cardData = [
 	{
 		title: "JOIN AN !ACTIVE COMMUNITY",
 		description:
-			"Our organization is more than just a place to learn how to code. By joining us, you'll have access to a supportive community of fellow learners and experienced instructors who are there to help you every step of the way.",
+			"GWO is more than just a place to learn how to write. By joining us, you'll have access to a supportive community of fellow learners and experienced volunteers who are there to help you every step of the way.",
 		button: "",
 		image: (
 			<svg
@@ -105,7 +105,7 @@ const cardData = [
 						width="150"
 						height="125"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
 						<feFlood
 							floodOpacity="0"
@@ -163,9 +163,9 @@ const cardData = [
 		),
 	},
 	{
-		title: "ENHANCE YOUR !PROGRAMMING",
+		title: "ENHANCE YOUR !PROFESSIONAL LIFE",
 		description:
-			"Develop your programming skills and confidence with our courses, designed for beginners and those looking to improve. Realize your potential and build real-world applications.",
+			"Develop your writing skills and confidence with our worshops, designed for beginners and those looking to improve. Realize your potential and help build a literate continent.",
 		button: "Start Now",
 		image: (
 			<svg
@@ -190,7 +190,7 @@ const cardData = [
 						width="142.332"
 						height="125"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
 						<feFlood
 							floodOpacity="0"

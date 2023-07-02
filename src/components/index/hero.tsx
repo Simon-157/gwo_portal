@@ -21,34 +21,32 @@ export default function Hero() {
 						</span>
 					</span>
 					<span
-						data-content="Develop."
+						data-content="Write."
 						className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:bg-white/25 before:bg-clip-text before:text-transparent before:animate-gradient-background-2"
 					>
 						<span className="px-2 text-transparent text-gradient animate-gradient-foreground-2 text-shadow-sm leading-none">
-							Develop.
+							Write.
 						</span>
 					</span>
 					<span
-						data-content="Succeed."
+						data-content="Impact"
 						className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:bg-white/25 before:bg-clip-text before:text-transparent before:animate-gradient-background-3"
 					>
 						<span className="px-2 text-transparent text-gradient animate-gradient-foreground-3 text-shadow-sm leading-none">
-							Succeed.
+							Impact
 						</span>
 					</span>
 				</h1>
 
 				<p className="z-10 sm:text-sm md:text-md lg:text-lg xl:text-2xl w-full max-w-6xl text-center bg-white/60 bg-clip-text text-transparent">
-					Arafa Tech is a 501(c)(3) non-profit organization that
-					provides coding education and mentorship to underprivileged
-					students, empowering them with technical skills for the
-					future.
+					Generational Writers' Organization (GWO) is a non-profit organization based in Accra, Ghana. 
+					It was founded in 2017 by a group of writers who wanted to create a space for young writers to learn, grow, and connect with each other. 
 				</p>
 				<Link
 					href="/discord"
 					className="btn btn-wide btn-primary"
 					onClick={() => {
-						
+
 					}}
 				>
 					Get Started

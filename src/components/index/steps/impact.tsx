@@ -1,9 +1,9 @@
 import Link from "next/link";
 import StepLayout from "./layout";
 
-export default function Succeed() {
+export default function Impact() {
 	return (
-		<StepLayout title="Succeed" number={3}>
+		<StepLayout title="Impact" number={3}>
 
 			<div className="flex flex-col lg:flex-row">
 				<img
@@ -12,7 +12,7 @@ export default function Succeed() {
 				/>
 				<div className="text-right">
 					<h3 className="h3 uppercase tracking-[0.2em] mb-3 mt-1">
-						<span className="text-glow">succeed</span> with our
+						<span className="text-glow">impact</span> with our
 						community
 					</h3>
 					<p className="py-5 mb-5">
