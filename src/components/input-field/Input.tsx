@@ -10,9 +10,13 @@ type InputProps = {
   name?: string;
   value?: string | string[];
   selectOptions?: string[]; // Array of options for select element
+  accept?:string
+  checked?:boolean
 };
 
 const Input = ({
+  checked,
+  accept,
   type = "text",
   onChange,
   style,
@@ -40,6 +44,7 @@ const Input = ({
     <div className={InputStyles.wrapper}>
       {isSelect ? (
         <select
+          aria-checked = {checked}
           id={label}
           name={name}
           value={value}
@@ -64,6 +69,7 @@ const Input = ({
           onChange={handleInputChange}
           style={style}
           className={InputStyles.input}
+          accept={accept}
         />
       )}
       {label && <label htmlFor={label}>{label}</label>}

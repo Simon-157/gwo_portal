@@ -1,16 +1,11 @@
 import { CorrectIcon, SwapIcon, AbortIcon, BulbIcon } from "@/assets/icons/Icons";
 import Button from "@/components/button/Button";
-import OngoingJourneyStyles from "./OngoingJourney.module.css";
+import OngoingJourneyStyles from "./Access.module.css";
 import darkBell from "@/assets/images/dark-bell.png";
 import darkClock from "@/assets/images/dark-clock.png";
 import Image from "next/image";
 import CircularProgressBar from "@/components/progress_bar/circular_progress_bar/CircularProgressBar";
-const OnGoingJourney = () => {
-
-
-  
-
-
+const Access = () => {
   return (
     <div className={OngoingJourneyStyles.wrapper}>
       <div className={OngoingJourneyStyles.mission_announcement}>
@@ -94,4 +89,4 @@ const OnGoingJourney = () => {
   );
 };
 
-export default OnGoingJourney;
+export default Access;

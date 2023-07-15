@@ -1,5 +1,5 @@
 //libraries
-// import { useLocation } from "react-router-dom";
+import { useRouter } from "next/router";
 
 //Styles
 import errorStyles from "@/styles/errors.module.css";
@@ -8,10 +8,11 @@ import errorStyles from "@/styles/errors.module.css";
 import { PageNotFoundSvg } from "@/assets/icons/Icons";
 
 const PageNotFound = () => {
-//   const location = useLocation();
+  const router = useRouter();
   return (
     <div className={errorStyles.error__wrapper}>
       <div>
+        <span onClick={() => {router.back()}} className="btn h3 text-lg rounded-md px-10 text-transparent text-gradient text-shadow-sm ">Back</span>
         <PageNotFoundSvg />
         <br />
         <strong>

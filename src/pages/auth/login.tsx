@@ -1,22 +1,31 @@
 import { useAuth } from "@/contexts/authUser";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const router = useRouter();
+    const { signInWithEmail, signInWithGoogle, user } = useAuth();
   
-    const { signInWithEmail, signInWithGoogle } = useAuth();
-  
-    const handleLogin = (e: React.FormEvent) => {
+    const handleLogin = async (e: React.FormEvent) => {
       e.preventDefault();
-      signInWithEmail(email, password);
+      const state = await signInWithEmail(email, password);
+      state && router.push('/blog/admin')
     };
   
     const handleGoogleSignIn = () => {
       signInWithGoogle();
     };
   
+    useEffect(() => {
+      if(user){
+       router.push('/blog')
+      }
+    }, [user])
+    
     return (
+      <>
       <div className="flex items-center justify-center min-h-screen">
         <div className="max-w-md w-full p-6 bg-slate-800 rounded-md shadow-md">
           <h2 className="text-2xl font-semibold mb-6">Login</h2>
@@ -59,6 +68,7 @@ const LoginPage = () => {
           </form>
         </div>
       </div>
+      </>
     );
   };
   

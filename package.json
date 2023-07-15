@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "@types/firebase": "^3.2.1",
     "@types/react-highlight": "^0.12.5"
   }
 }

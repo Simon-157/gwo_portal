@@ -34,7 +34,7 @@ const StageOne: React.FC<StageOneProps> = ({ handleSubmit }) => {
       <div className={StageStyles.textColumn}>
         <GoBack handleGoBack={handleGoBack} />
 
-        <h2>What do you wanna call the Journey?</h2>
+        <h2>What is your fullname ? Enter in the field below;</h2>
         <br />
         <Input
           name="name"

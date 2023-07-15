@@ -24,34 +24,20 @@ const StageTwo: React.FC<StageTwoProps> = ({ handleSubmit, handleGoBack }) => {
     setSelectedOption(event.target.value);
   };
 
-  const currentDate = new Date();
 
-  const calculateNextDateTime = (option: string): string => {
-    let nextDate = new Date();
-
-    if (option === 'week') {
-      nextDate.setDate(currentDate.getDate() + 7);
-    } else if (option === 'fortnight') {
-      nextDate.setDate(currentDate.getDate() + 14);
-    } else if (option === 'month') {
-      nextDate.setMonth(currentDate.getMonth() + 1);
-    }
-
-    return nextDate.toISOString();
-  };
 
 
   const radioOptions: RadioOption[] = [
-    { label: "week", value: calculateNextDateTime("week") },
-    { label: "fortnight", value: calculateNextDateTime("fortnight") },
-    { label: "month", value: calculateNextDateTime("month") },
+    { label: "Student - High School", value: "Basic" },
+    { label: "Student - Undergraduate", value: "Undergraduate" },
+    { label: "Student - Postgraduate", value: "Postgraduate" },
+    { label: "Worker - Self Emplloyed", value: "Employee" },
   ];
 
 
   const handleStageTwoSubmit = () => {
     const data = {
-      startDate: currentDate.toISOString(),
-      endDate: selectedOption,
+      profession: selectedOption,
     };
 
     handleSubmit(data);
@@ -72,7 +58,7 @@ const StageTwo: React.FC<StageTwoProps> = ({ handleSubmit, handleGoBack }) => {
               name="duration"
               value={option.value}
               onChange={handleOptionChange}
-              // checked={selectedOption === option.value}
+              checked={selectedOption === option.value}
             />
           ))}
         </div>

@@ -1,17 +1,15 @@
 //components
-import ProtectedRoute from "@/components/protected-route/ProtectedRoute";
-import NoOngoingJourney from "./no_ongoing_journey/NoOngoingJourney";
-import OnGoingJourney from "./ongoing_journey/OnGoingJourney";
-import { useEffect, useState } from "react";
+import Access from "@/components/blog/admin/Access/Access";
+import NoAccess from "@/components/blog/admin/NoAccess/NoAccess";
+import ProtectedRoute from "@/components/blog/protected-route/ProtectedRoute";
 
 const Home = () => {
-  const [journeys, setJourneys] = useState({})
-
-  const hasAccess = false
+  
+  const hasAccess = true
 
   return (
     <ProtectedRoute>
-    {hasAccess ? <OnGoingJourney /> : <NoOngoingJourney />}
+    {hasAccess ? <Access /> : <NoAccess />}
     </ProtectedRoute>
   )
   

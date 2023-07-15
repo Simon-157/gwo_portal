@@ -67,9 +67,7 @@ export default function Header() {
                 );
               })}
               <li>
-                <Link href="/" className="btn btn-primary w-full">
                   <Button children={<>Join Us</>} type={""}></Button>
-                </Link>
               </li>
             </ul>
           </div>
