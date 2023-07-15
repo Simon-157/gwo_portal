@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useAuth } from '@/contexts/authUser';
+import { AppFrame } from '../admin/app_frame/AppFrame';
 
 interface ProtectedRouteProps {
   children: React.ReactNode;
@@ -21,10 +22,11 @@ const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
   return (
    <>
    {loading ? <div> ..... loading</div>: null}
-   {user && <>{children}</> }
+   {user && <AppFrame>{children}</AppFrame> }
    </> 
    
     )
 };
 
 export default ProtectedRoute;
+

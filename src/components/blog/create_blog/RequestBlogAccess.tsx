@@ -4,10 +4,10 @@ import StageThree from "./stages/StageThree";
 import StageTwo from "./stages/StageTwo";
 import StageFour from "./stages/StageFour";
 import StageCircle from "./stages/StageCone";
-import CreateBlogJourneyStyles from "./CreateBlogJourney.module.css";
+import RequestAccessStyles from "./RequestJourney.module.css";
 
 
-const CreateBlogJourney: React.FC = () => {
+const RequestBlogAccess: React.FC = () => {
   const [stage, setStage] = useState<number>(1);
   const [formData, setFormData] = useState<any>({});
 
@@ -70,11 +70,11 @@ const CreateBlogJourney: React.FC = () => {
   };
 
   return (
-    <main className={CreateBlogJourneyStyles.journeys}>
+    <main className={RequestAccessStyles.journeys}>
       <StageCircle stage={stage} />
       <section>{renderStage()}</section>
     </main>
   );
 };
 
-export default CreateBlogJourney;
+export default RequestBlogAccess;

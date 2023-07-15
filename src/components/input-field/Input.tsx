@@ -10,9 +10,11 @@ type InputProps = {
   name?: string;
   value?: string | string[];
   selectOptions?: string[]; // Array of options for select element
+  accept?:string
 };
 
 const Input = ({
+  accept,
   type = "text",
   onChange,
   style,
@@ -64,6 +66,7 @@ const Input = ({
           onChange={handleInputChange}
           style={style}
           className={InputStyles.input}
+          accept={accept}
         />
       )}
       {label && <label htmlFor={label}>{label}</label>}

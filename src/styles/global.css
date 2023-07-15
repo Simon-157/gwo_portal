@@ -4,10 +4,25 @@
 
 
 
+
+
 :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
+	--app-green: #bff9e7;
+	--app-hover-green: #8cffdb;
+	--app-yellow: #fae4ad;
+	--app-violet: #ebc8f7;
+	--app-blue: #4ec7ff;
+	--app-orange: #f49867;
+	--app-background-1: #101010;
+	--app-background-2: #1e1e1e;
+	--app-background-3: #aaa;
+	--app-white: #eee;
+	--app-font-primary: "Google Sans";
+	--app-font-secondary: "Quicksand";
+	--app-font-tertiary: "Poppins";
   }
   
 

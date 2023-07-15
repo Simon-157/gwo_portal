@@ -1,10 +1,10 @@
-import CreateBlogJourney from '@/components/blog/create_blog/CreateBlogJourney';
+import RequestBlogAccess from '@/components/blog/create_blog/RequestBlogAccess';
 import React from 'react'
 
 const Create = () => {
     return (
         <>
-            <CreateBlogJourney />
+            <RequestBlogAccess />
         </>
     )
 }

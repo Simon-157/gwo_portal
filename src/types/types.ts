@@ -10,3 +10,11 @@ export type Blog = {
 	slug?: string;
     content?:string
 };
+
+
+export type AdminProp = {
+	adminId: string,
+	adminName: string,
+	adminProfileUrl: string,
+	adminProfession: string,
+}

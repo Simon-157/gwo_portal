@@ -28,10 +28,11 @@ export const useFirebaseAuth = () => {
     try {
       const { user: firebaseUser } = await signInWithEmailAndPassword(auth, email, password);
       console.log(user);
-      
       setUser(firebaseUser);
+      return true;
     } catch (error) {
       console.error('Error signing in with email:', error);
+      return false
     }
   };
 

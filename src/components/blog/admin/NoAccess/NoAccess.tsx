@@ -1,20 +1,20 @@
 //components
 import Cover from "@/assets/write.png";
 
-import NoOngoingJourneyStyles from "./NoOngoingJourney.module.css";
+import NoOngoingJourneyStyles from "./NoAccess.module.css";
 
 import { useNavigate } from "react-router-dom";
 import Button from "@/components/button/Button";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { access } from "@/utils/routes";
+import { useAuth } from "@/contexts/authUser";
 
-const NoDareJourney = () => {
+const NoAccess = () => {
+  const { user, loading } = useAuth();
 
-  
   const router = useRouter();
-
-
+  
   const buttonStyle = {
     marginBottom: "1rem",
   };
@@ -27,11 +27,11 @@ const NoDareJourney = () => {
       <div className={NoOngoingJourneyStyles.home__wrapper}>
         <section className={NoOngoingJourneyStyles.home__wrapper__text}>
           <h2>
-            Welcome, <span>{}</span>
+            Welcome, <span>{user?.email.split("@")[0]}</span>
           </h2>
           <p>
-            umm, it seems you don't have write access
-            <span style={{ color: "yellow" }}> to blog</span>
+            umm, it seems you don't have  access to
+            <span style={{ color: "var(--app-yellow)" }}> blog</span>
           </p>
           <br />
           <Button
@@ -53,4 +53,4 @@ const NoDareJourney = () => {
   );
 };
 
-export default NoDareJourney;
+export default NoAccess;

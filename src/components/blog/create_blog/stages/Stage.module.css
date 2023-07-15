@@ -1,15 +1,25 @@
 .container {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
   padding: 1.5rem;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.challenge__container{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-top: 50%;
 }
 
 .textColumn {
   font-weight: 500;
-  font-size: 16px;
+  color: whitesmoke;
+  font-size: 18px;
   line-height: 42px;
   padding-top: 1.5rem;
-  color: var(--app-yellow);
 }
 
 .imageColumn {
@@ -17,22 +27,20 @@
 }
 
 .img{
-  max-width: 100%;
   transform: scale(2);
   position: relative;
-  left: 4rem;
+  /* left: 4rem; */
   top: 7rem;
 }
 
 .text__row {
-  color: var(--app-yellow);
   padding: 0 !important;
-  line-height: 4.5;
+  line-height: 2.5;
+  font-size: larger;
+ 
 }
-
-
 .arrow{
-  color: var(--app-green);
+  color: rebeccapurple;
   cursor: pointer;
 }
 
@@ -62,11 +70,15 @@
   height: 60px;
   font-size: 20px;
   font-weight: bold;
-  background: var(--app-yellow);
+  background: rgba(205, 138, 50, 0.551);
 }
 
 
 @media (min-width: 768px) {
+  .container {
+    flex-flow: row;
+  } 
+
   .img {
     transform: scale(1);
     top: 0;
